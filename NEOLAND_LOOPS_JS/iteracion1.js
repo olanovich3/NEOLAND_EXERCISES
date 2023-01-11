@@ -5,7 +5,7 @@ for (const item of products){
 
     if(item.includes("Camiseta")){
 
-    console.log(item);
+    console.log(item)
 
     }
 
