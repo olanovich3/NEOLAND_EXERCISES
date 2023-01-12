@@ -6,7 +6,7 @@
 const numbers = [1, 2, 3, 5, 45, 37, 58];
 
 const sumall = (param) => {
-  sumarNumbers = 0;
+  let sumarNumbers = 0;
   for (const item of param) {
     sumarNumbers += item;
   }
