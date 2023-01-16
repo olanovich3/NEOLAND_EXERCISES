@@ -62,3 +62,4 @@ const name4 = name3.map((over35) => {
   }
   return over35;
 });
+console.log(name4);
