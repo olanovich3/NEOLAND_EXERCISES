@@ -15,7 +15,9 @@ const nameFinder = [
 ];
 
 const finderName = (list, name) => {
-  const finder = list.find((nombre) => nombre === name);
+  const finder = list.find(
+    (nombre) => nombre.toLowerCase() === name.toLowerCase()
+  );
   if (finder === name) {
     return `El valor es True y está en el indice ${list.indexOf(name)}`;
   } else {

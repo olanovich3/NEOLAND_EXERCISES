@@ -13,15 +13,16 @@ const duplicates = [
   "pasta",
   "soda",
 ];
-function removeDuplicates(params) {
-  newDuplicates = [];
 
-  for (let i = 0; i < params.length; i++) {
-    if (!newDuplicates.includes(params[i])) {
-      newDuplicates.push(params[i]);
+const noDuplicatesList = (param) => {
+  let removeDuplicates = [];
+
+  duplicates.forEach((food) => {
+    if (removeDuplicates.includes(food) == false) {
+      removeDuplicates.push(food);
     }
-  }
-  return newDuplicates;
-}
+  });
+  return removeDuplicates;
+};
 
-console.log(removeDuplicates(duplicates));
+console.log(noDuplicatesList(duplicates));
