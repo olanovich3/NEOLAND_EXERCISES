@@ -52,14 +52,13 @@ const streamers3 = [
   { name: "AuronPlay", age: 33, gameMorePlayed: "Among Us" },
 ];
 
-const name3 = streamers3.filter((word) =>
-  word.gameMorePlayed.includes("Legends")
+const name3 = streamers3.filter((streamer) =>
+  streamer.gameMorePlayed.includes("Legends")
 );
 
-const name4 = name3.map((x) => {
-  if (x.age > 35) {
-    x.gameMorePlayed = x.gameMorePlayed.toLocaleUpperCase();
+const name4 = name3.map((over35) => {
+  if (over35.age > 35) {
+    over35.gameMorePlayed = over35.gameMorePlayed.toLocaleUpperCase();
   }
-  return x;
+  return over35;
 });
-//MIRAR COMO LO HA HECHO LA GENTE
