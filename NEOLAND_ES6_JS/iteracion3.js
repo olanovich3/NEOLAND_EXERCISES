@@ -31,8 +31,10 @@ const newToy1 = { ...toy1, ...toyUpdate };
 
 const colors = ["rojo", "azul", "amarillo", "verde", "naranja"];
 
-const newColors = [...colors.filter((el, i) => i != 2)];
+const colors2 = colors.slice(0, 2);
 
-console.log(newColors);
+const colors3 = colors.slice(3, 5);
 
-//PREGUNTAR QUE SIGNIFICA LA FUNCION DE ARRIBA
+const colors4 = [...colors2, ...colors3];
+
+console.log(colors4);
