@@ -4,10 +4,11 @@
 const names = ["Caracol", "Mosquito", "Salamandra", "Ajolote"];
 
 const findArrayIndex = (list, word) => {
-  if (list.includes(word)) {
-    return list.indexof(word);
+  word = word.toLowerCase();
+  for (const iterator of list) {
+    if (iterator.toLowerCase() === word) {
+      return list.indexOf(iterator);
+    }
   }
 };
-
-const x = list.includes(word);
-console.log(x);
+console.log(findArrayIndex(names, "ajolote"));
